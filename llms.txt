@@ -22,6 +22,7 @@
 - [연애 꿈 해몽 모음 — 전남친·짝사랑·결혼 꿈](https://kangraemin.github.io/oneul-kkum/t/love/)
 - [시험 합격 꿈 해몽 — 합격·승진·면접 꿈](https://kangraemin.github.io/oneul-kkum/t/exam/)
 - [오늘의 띠별 운세](https://kangraemin.github.io/oneul-kkum/unse/)
+- [년생별 나이표·띠](https://kangraemin.github.io/oneul-kkum/nai/)
 - [오늘의 별자리 운세](https://kangraemin.github.io/oneul-kkum/byeoljari/)
 - [2027년 띠별 신년운세](https://kangraemin.github.io/oneul-kkum/unse/2027/)
 - [2027년 별자리 신년운세](https://kangraemin.github.io/oneul-kkum/byeoljari/2027/)
