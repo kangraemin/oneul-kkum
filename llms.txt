@@ -31,6 +31,7 @@
 - [2027년 띠별 신년운세](https://kangraemin.github.io/oneul-kkum/unse/2027/)
 - [2027년 별자리 신년운세](https://kangraemin.github.io/oneul-kkum/byeoljari/2027/)
 - [띠 궁합 78가지](https://kangraemin.github.io/oneul-kkum/gunghap/)
+- [혈액형 궁합 10가지](https://kangraemin.github.io/oneul-kkum/blood/)
 - [타로 카드 의미 78장](https://kangraemin.github.io/oneul-kkum/tarot/)
 
 ## 데이터
