@@ -21,10 +21,10 @@ h1{font-size:28px;font-weight:700;line-height:1.35;margin:4px 0 8px;letter-spaci
 .search button{height:52px;padding:0 20px;border:0;border-radius:12px;background:var(--brand);color:#fff;font-weight:600;font-size:16px}
 #hits{margin-top:12px}footer{color:var(--sub);font-size:12px;text-align:center;margin-top:40px}
 .ad{margin:20px 0;min-height:100px}
-select{min-width:0;max-width:100%}.tw{overflow-x:auto;margin:12px 0;border-radius:12px;background:var(--card)}.tw>table.card{margin:0}table.card{padding:14px 12px;font-size:15px}table.card td,table.card th{overflow-wrap:normal;padding:2px 0 2px 8px}table.card td:first-child,table.card th:first-child{padding-left:0}</style></head><body><main><nav class="crumb"><a href="/oneul-kkum/">오늘꿈해몽</a></nav><h1>음력 양력 변환기 — 음력 생일 계산</h1>
-<p class="summary">양력 날짜를 음력으로, 음력 날짜(윤달 포함)를 양력으로 바로 바꿔요. 오늘 2026-10-22는 음력 9월 12일이에요.</p>
+select{min-width:0;max-width:100%}.tw{overflow-x:auto;margin:12px 0;border-radius:12px;background:var(--card);padding:14px 12px}.tw>table.card{margin:0;padding:0;border-radius:0}table.card{padding:14px 12px;font-size:15px}table.card td,table.card th{overflow-wrap:normal;padding:2px 0 2px 8px}table.card td:first-child,table.card th:first-child{padding-left:0}</style></head><body><main><nav class="crumb"><a href="/oneul-kkum/">오늘꿈해몽</a></nav><h1>음력 양력 변환기 — 음력 생일 계산</h1>
+<p class="summary">양력 날짜를 음력으로, 음력 날짜(윤달 포함)를 양력으로 바로 바꿔요. 오늘 2026-10-23는 음력 9월 13일이에요.</p>
 <form class="card" onsubmit="return false" style="display:grid;gap:8px">
-<label>양력 → 음력 <input type="date" id="sd" value="2026-10-22"></label><p id="so" class="summary"></p>
+<label>양력 → 음력 <input type="date" id="sd" value="2026-10-23"></label><p id="so" class="summary"></p>
 <label>음력 → 양력 <input type="number" id="ly" value="2026" min="1900" max="2050" style="width:5em">년 <input type="number" id="lm" value="1" min="1" max="12" style="width:3.5em">월 <input type="number" id="ldd" value="1" min="1" max="30" style="width:3.5em">일 <label><input type="checkbox" id="li"> 윤달</label></label><p id="lo" class="summary"></p></form>
 <script src="/oneul-kkum/eumryeok/klc.min.js"></script><script>(function(){var W='일월화수목금토';function $(i){return document.getElementById(i)}
 function s2l(){var v=$('sd').value.split('-').map(Number),c=new KoreanLunarCalendar();if(!c.setSolarDate(v[0],v[1],v[2])){$('so').textContent='변환할 수 없는 날짜예요.';return}var l=c.getLunarCalendar();$('so').textContent='음력 '+l.year+'년 '+(l.intercalation?'윤':'')+l.month+'월 '+l.day+'일 ('+c.getKoreanGapja().year+')'}
