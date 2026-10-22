@@ -57,6 +57,8 @@
 - [배란일 계산기](https://kangraemin.github.io/oneul-kkum/baeran/)
 - [글자수 세기·자소서 분량별 원고지 바이트](https://kangraemin.github.io/oneul-kkum/geulja/)
 - [D-day 계산기·날짜 더하기 빼기](https://kangraemin.github.io/oneul-kkum/dday/)
+- [평수 계산기·평 ㎡ 환산](https://kangraemin.github.io/oneul-kkum/pyeong/)
+- [퍼센트 계산기·할인율 증감률](https://kangraemin.github.io/oneul-kkum/percent/)
 - [타로 카드 의미 78장](https://kangraemin.github.io/oneul-kkum/tarot/)
 
 ## 데이터
