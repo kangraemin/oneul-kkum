@@ -59,6 +59,8 @@
 - [D-day 계산기·날짜 더하기 빼기](https://kangraemin.github.io/oneul-kkum/dday/)
 - [평수 계산기·평 ㎡ 환산](https://kangraemin.github.io/oneul-kkum/pyeong/)
 - [퍼센트 계산기·할인율 증감률](https://kangraemin.github.io/oneul-kkum/percent/)
+- [로또 번호 생성기·6/45 5게임](https://kangraemin.github.io/oneul-kkum/lotto/)
+- [기초대사량 계산기·하루 권장 열량](https://kangraemin.github.io/oneul-kkum/gichodaesa/)
 - [타로 카드 의미 78장](https://kangraemin.github.io/oneul-kkum/tarot/)
 
 ## 데이터
