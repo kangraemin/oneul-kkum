@@ -55,6 +55,8 @@
 - [출산 예정일 계산기](https://kangraemin.github.io/oneul-kkum/due/)
 - [아기 백일 계산기·달별 백일 날짜표](https://kangraemin.github.io/oneul-kkum/baekil/)
 - [배란일 계산기](https://kangraemin.github.io/oneul-kkum/baeran/)
+- [글자수 세기·자소서 분량별 원고지 바이트](https://kangraemin.github.io/oneul-kkum/geulja/)
+- [D-day 계산기·날짜 더하기 빼기](https://kangraemin.github.io/oneul-kkum/dday/)
 - [타로 카드 의미 78장](https://kangraemin.github.io/oneul-kkum/tarot/)
 
 ## 데이터
