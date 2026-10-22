@@ -35,6 +35,7 @@
 - [이름궁합 계산기](https://kangraemin.github.io/oneul-kkum/ireum/)
 - [만 나이 계산기](https://kangraemin.github.io/oneul-kkum/nai/calc/)
 - [BMI 계산기·키별 적정 체중](https://kangraemin.github.io/oneul-kkum/bmi/)
+- [출산 예정일 계산기](https://kangraemin.github.io/oneul-kkum/due/)
 - [타로 카드 의미 78장](https://kangraemin.github.io/oneul-kkum/tarot/)
 
 ## 데이터
