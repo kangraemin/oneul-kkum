@@ -31,4 +31,4 @@ h1{font-size:28px;font-weight:700;line-height:1.35;margin:4px 0 8px;letter-spaci
 async function find(){L??=await (await fetch('/oneul-kkum/data/index.json')).json();const raw=document.getElementById('q').value,q=n(raw),t=raw.split(/\s+/).map(n);if(!q)return;
 const r=L.map(d=>{let s=0;for(const a0 of d.a){const a=n(a0);if(!a)continue;if(a.length===1){if(t.some(x=>x===a||(x.startsWith(a)&&/^(이|가|을|를|은|는|에|의|도|한테|에게|들)$/.test(x.slice(1)))))s=Math.max(s,14)}else if(q.includes(a))s=Math.max(s,10+a.length*4)}return{d,s}}).filter(x=>x.s).sort((a,b)=>b.s-a.s).slice(0,10);
 document.getElementById('hits').innerHTML=r.length?r.map(({d})=>'<li><a href="/oneul-kkum/d/'+d.s+'/"><b>'+(/꿈$/.test(d.n)?d.n:d.n+' 꿈')+'</b><small>'+d.m+'</small></a></li>').join(''):'<li class="card">딱 맞는 해몽을 못 찾았어요. 꿈에서 가장 또렷한 것 하나만 적어 보세요.</li>'}</script>
-<footer><a href="/oneul-kkum/">오늘꿈해몽</a> · 해몽은 옛 풀이와 요즘 해석을 정리한 참고용 이야기예요.</footer></main></body></html>
+<footer><a href="/oneul-kkum/">오늘꿈해몽</a> · 해몽은 옛 풀이와 요즘 해석을 정리한 참고용 이야기예요.<br>오구리웍스 다른 서비스: <a href="https://mukmap.kr">먹맵 — 유튜버 맛집 지도</a> · <a href="https://eodimeok.kr">어디먹(공공기관 근처 맛집 지도)</a></footer></main></body></html>
