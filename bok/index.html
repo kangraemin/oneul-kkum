@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2027 내 복주머니 채워줘</title>
+<meta name="description" content="친구들이 새해 덕담을 복주머니에 넣어 줘요. 1월 1일에 열어 보세요.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2027 내 복주머니 채워줘">
+<meta property="og:description" content="친구들이 새해 덕담을 복주머니에 넣어 줘요. 1월 1일에 열어 보세요.">
+<meta property="og:image" content="https://kangraemin.github.io/oneul-kkum/bok/og.png">
+<meta property="og:url" content="https://kangraemin.github.io/oneul-kkum/bok/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3SCWLTERCF"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-3SCWLTERCF')</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4785237655148075" crossorigin="anonymous"></script>
+<style>
+:root{--bg:#fff;--ink:#191f28;--sub:#4e5968;--line:#d1d6db;--red:#d93a32;--redd:#b72b25;--soft:#f2f4f6}
+@media (prefers-color-scheme:dark){:root{--bg:#17171c;--ink:#f2f4f6;--sub:#b0b8c1;--line:#3a3d46;--soft:#24262d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:16px;font-weight:500;line-height:1.6;word-break:keep-all;overflow-wrap:anywhere}
+main{max-width:480px;margin:0 auto;padding:32px 20px 48px;min-height:100vh}
+h1{font-size:28px;font-weight:700;line-height:1.35;margin:0 0 8px;letter-spacing:-.02em}
+p{margin:0 0 8px}
+.sub{color:var(--sub)}
+.small{font-size:13px;color:var(--sub)}
+svg.pouch{display:block;width:200px;height:auto;margin:28px auto}
+label{display:block;font-size:13px;color:var(--sub);margin:16px 0 6px}
+input,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;min-height:48px}
+textarea{resize:none;height:96px}
+input:focus,textarea:focus{outline:2px solid var(--red);border-color:var(--red)}
+button,a.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;margin-top:12px;border:0;border-radius:12px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer;background:var(--soft);color:var(--ink)}
+button.main,a.btn.main{background:var(--red);color:#fff}
+button:disabled{opacity:.5}
+.err{color:var(--redd);font-size:13px;min-height:20px;margin-top:8px}
+@media (prefers-color-scheme:dark){.err{color:#ff8a80}}
+.msgs{list-style:none;padding:0;margin:16px 0 0}
+.msgs li{padding:14px 0;border-top:1px solid var(--line)}
+.msgs b{display:block;font-size:13px;color:var(--sub);font-weight:500}
+.hide{display:none}
+</style>
+</head>
+<body>
+<main>
+<section id="v-home" class="hide">
+  <h1>2027 내 복주머니 채워줘</h1>
+  <p class="sub">친구들이 덕담을 넣어 주면 1월 1일에 열어 봐요.</p>
+  <svg class="pouch" data-pouch viewBox="0 0 200 200" aria-hidden="true"></svg>
+  <label for="name">내 이름</label>
+  <input id="name" maxlength="10" autocomplete="off" placeholder="친구들이 부르는 이름">
+  <button class="main" id="make">내 복주머니 만들기</button>
+  <div class="err" id="e-home"></div>
+</section>
+
+<section id="v-mine" class="hide">
+  <h1><span class="nm"></span>님의 복주머니</h1>
+  <p class="sub">덕담 <span class="cnt">0</span>개가 들어 있어요.</p>
+  <svg class="pouch" data-pouch viewBox="0 0 200 200" aria-hidden="true"></svg>
+  <button class="main" id="share">친구들에게 공유하기</button>
+  <button id="copy">링크 복사</button>
+  <p class="small" id="lock" style="margin-top:16px"></p>
+  <ul class="msgs" id="msgs"></ul>
+  <button id="secret">내 비밀 링크 복사 (다른 기기에서 열 때)</button>
+</section>
+
+<section id="v-friend" class="hide">
+  <h1><span class="nm"></span>님의 복주머니</h1>
+  <p class="sub">덕담 <span class="cnt">0</span>개가 들어 있어요. 한마디 넣어 주세요.</p>
+  <svg class="pouch" data-pouch viewBox="0 0 200 200" aria-hidden="true"></svg>
+  <div id="form">
+    <label for="nick">내 이름</label>
+    <input id="nick" maxlength="10" autocomplete="off">
+    <label for="text">덕담 (100자까지)</label>
+    <textarea id="text" maxlength="100" placeholder="새해에는 좋은 일만 가득하길"></textarea>
+    <button class="main" id="send">복주머니에 넣기</button>
+    <div class="err" id="e-friend"></div>
+  </div>
+  <div id="thanks" class="hide">
+    <p>덕담을 넣었어요. 주인이 1월 1일에 열어 봐요.</p>
+    <button class="main" id="mine2">나도 복주머니 만들기</button>
+  </div>
+</section>
+<p class="small" style="text-align:center;margin-top:32px">쓴 덕담은 주머니 주인만 1월 1일부터 볼 수 있어요.</p>
+</main>
+<script>
+const API='https://bok-api.remin1994.workers.dev';
+const $=s=>document.querySelector(s);
+const ev=(n,p)=>{try{gtag('event',n,p||{})}catch(e){}};
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const PAL=['#d93a32','#b72b25','#f2b632'];
+document.querySelectorAll('[data-pouch]').forEach(s=>{s.innerHTML=
+ '<path d="M70 46c-4-14 4-26 30-26s34 12 30 26z" fill="#b72b25"/>'+
+ '<path d="M72 52c-30 18-52 56-46 98 3 22 22 36 74 36s71-14 74-36c6-42-16-80-46-98z" fill="#d93a32"/>'+
+ '<path d="M68 56h64l6 14H62z" fill="#b72b25"/>'+
+ '<rect x="60" y="62" width="80" height="9" rx="4.5" fill="#f2b632"/>'+
+ '<path d="M100 71c-6 14-22 14-24 26M100 71c6 14 22 14 24 26" stroke="#f2b632" stroke-width="5" fill="none" stroke-linecap="round"/>'+
+ '<circle cx="100" cy="132" r="22" fill="none" stroke="#f2b632" stroke-width="5"/><path d="M100 118v28M88 132h24" stroke="#f2b632" stroke-width="5" stroke-linecap="round"/>'});
+const q=new URLSearchParams(location.search);
+let pid=q.get('p'),key=q.get('k');
+const mineMap=()=>{try{return JSON.parse(store.get('bok_mine')||'{}')}catch(e){return {}}};
+if(pid&&key){const m=mineMap();m[pid]=key;store.set('bok_mine',JSON.stringify(m));history.replaceState(null,'',location.pathname+'?p='+pid)}
+const show=id=>{['home','mine','friend'].forEach(v=>$('#v-'+v).classList.toggle('hide',v!==id))};
+const shareUrl=id=>API+'/p/'+id;
+async function api(path,opt){const r=await fetch(API+path,opt);const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error||'잠시 후 다시 시도해 주세요');return j}
+const post=b=>({method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)});
+
+async function boot(){
+  if(!pid){show('home');return}
+  let info;
+  try{info=await api('/api/pouch/'+pid)}catch(e){pid=null;show('home');return}
+  document.querySelectorAll('.nm').forEach(e=>e.textContent=info.name);
+  document.querySelectorAll('.cnt').forEach(e=>e.textContent=info.count);
+  document.title=info.name+'님의 복주머니';
+  const tok=mineMap()[pid];
+  if(tok){showMine(info,tok)}else{show('friend');const n=store.get('bok_nick');if(n)$('#nick').value=n;if(store.get('bok_left_'+pid)){$('#form').classList.add('hide');$('#thanks').classList.remove('hide')}}
+}
+async function showMine(info,tok){
+  show('mine');
+  try{
+    const r=await api('/api/pouch/'+pid+'/msgs',{headers:{'X-Token':tok}});
+    if(r.locked){$('#lock').textContent='덕담은 1월 1일부터 열어 볼 수 있어요.'}
+    else{$('#lock').textContent='';$('#msgs').innerHTML=r.messages.map(m=>'<li><b></b><span></span></li>').join('');
+      [...$('#msgs').children].forEach((li,i)=>{li.querySelector('b').textContent=r.messages[i].nick;li.querySelector('span').textContent=r.messages[i].text})}
+  }catch(e){$('#lock').textContent=e.message}
+  const url=shareUrl(pid),text=info.name+'님의 2027 복주머니에 덕담 한마디 넣어 주세요';
+  $('#share').onclick=async()=>{ev('share_click',{method:navigator.share?'web_share':'copy'});
+    if(navigator.share){try{await navigator.share({title:info.name+'님의 복주머니',text,url})}catch(e){}}
+    else{await copy(url,'#copy')}};
+  $('#copy').onclick=()=>{ev('share_click',{method:'copy'});copy(url,'#copy')};
+  $('#secret').onclick=()=>copy(location.origin+location.pathname+'?p='+pid+'&k='+tok,'#secret');
+}
+async function copy(t,sel){try{await navigator.clipboard.writeText(t)}catch(e){const i=document.createElement('textarea');i.value=t;document.body.appendChild(i);i.select();try{document.execCommand('copy')}catch(_){}i.remove()}
+  const b=$(sel),o=b.textContent;b.textContent='복사했어요';setTimeout(()=>b.textContent=o,1500)}
+
+$('#make').onclick=async()=>{const name=$('#name').value.trim();if(!name){$('#e-home').textContent='이름을 적어 주세요';return}
+  $('#make').disabled=true;$('#e-home').textContent='';
+  try{const r=await api('/api/pouch',post({name}));const m=mineMap();m[r.id]=r.token;store.set('bok_mine',JSON.stringify(m));ev('create_pouch');
+    location.href=location.pathname+'?p='+r.id}
+  catch(e){$('#e-home').textContent=e.message;$('#make').disabled=false}};
+$('#send').onclick=async()=>{const nick=$('#nick').value.trim(),text=$('#text').value.trim();
+  if(!nick||!text){$('#e-friend').textContent='이름과 덕담을 적어 주세요';return}
+  $('#send').disabled=true;$('#e-friend').textContent='';
+  try{const r=await api('/api/pouch/'+pid+'/msg',post({nick,text}));ev('leave_message');store.set('bok_nick',nick);store.set('bok_left_'+pid,'1');
+    document.querySelectorAll('.cnt').forEach(e=>e.textContent=r.count);$('#form').classList.add('hide');$('#thanks').classList.remove('hide')}
+  catch(e){$('#e-friend').textContent=e.message;$('#send').disabled=false}};
+$('#mine2').onclick=()=>{ev('make_own_from_friend');location.href=location.pathname};
+boot();
+</script>
+</body>
+</html>
